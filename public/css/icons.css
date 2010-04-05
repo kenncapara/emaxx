@@ -1,0 +1,34 @@
+
+.app-btn-excel         { background-image: url('/icons/page_white_excel.png') !important }
+
+.change-password { background-image: url('/icons/user_edit.png') !important }
+.logoff { background-image: url('/icons/delete.png') !important }
+
+
+.app-btn-add            { background-image: url('/icons/add.png') !important }
+.app-btn-cancel         { background-image: url('/icons/cancel.png') !important }
+.app-btn-delete         { background-image: url('/icons/delete.png') !important }
+.app-btn-find           { background-image: url('/icons/find.png') !important }
+.app-btn-save           { background-image: url('/icons/disk.png') !important }
+.app-btn-raise-case     { background-image: url('/icons/comment_add.png') !important }
+.app-btn-withdraw-case  { background-image: url('/icons/comment_delete.png') !important }
+.app-btn-accept         { background-image: url('/icons/accept.png') !important }
+.app-btn-reset          { background-image: url('/icons/arrow_undo.png') !important }
+
+.app-win-error          { background-image: url('/icons/error.png') !important }
+
+.app-win-prompt         { background-image: url('/icons/comment.png') !important }
+
+.app-win-question       {
+    float:left;
+    width:47px;
+    height:32px;
+    background:transparent url(/default/window/icon-question.gif) no-repeat top left;
+}
+
+.app-btn-compute          { background-image: url('/icons/calculator.png') !important }
+.app-btn-print            { background-image: url('/icons/printer.png') !important }
+.app-btn-arrow-left       { background-image: url('/icons/arrow_left.png') !important }
+.app-btn-arrow-right      { background-image: url('/icons/arrow_right.png') !important }
+.app-btn-arrow-up         { background-image: url('/icons/arrow_up.png') !important }
+.app-btn-arrow-down       { background-image: url('/icons/arrow_down.png') !important }

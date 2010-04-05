@@ -1,0 +1,22 @@
+<phpunit bootstrap="bootstrap.php"
+    colors="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    stopOnFailure="true"
+    syntaxCheck="true">
+    
+    <testsuite name="FDS">
+      <directory>./</directory>
+    </testsuite>
+  
+  <filter>
+      <whitelist>
+          <directory suffix=".php">../application/</directory>
+          <exclude>
+              <directory suffix=".phtml">../application/</directory>
+          </exclude>
+      </whitelist>
+  </filter>
+  
+</phpunit>

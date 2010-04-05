@@ -1,0 +1,79 @@
+<?php
+$t = $this->transaction;
+?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; utf-8">
+    <title>Print</title>
+	<style>
+		body { font-family: Arial }
+		table { width: 100% }
+		.bt td { border-top: solid 1px black; }
+		.ct td { text-align: center; }
+	</style>
+</head>
+<body>
+<h1 style="text-align: center">Passport Delivery Service</h1>
+<table>
+	<tr class="ct">
+		<td><?php echo $t['lastName'] ?></td>
+		<td><?php echo $t['firstName'] ?></td>
+		<td><?php echo $t['middleName'] ?></td>
+	</tr>
+	<tr class="bt ct">
+		<td>Last Name</td>
+		<td>First Name</td>
+		<td>Middle Name</td>
+	</tr>
+</table>
+<br />
+<table>
+	<tr>
+		<td><?php echo $t['deliveryAddress'] ?></td>
+	</tr>
+	<tr class="bt ct">
+		<td>Delivery Address</td>
+	</tr>
+</table>
+<br />
+<table>
+	<tr class="ct">
+		<td><?php echo $t['phoneNumber'] ?> <?php echo $t['mobileNumber'] ?></td>
+		<td><?php echo $t['releaseDate'] ?></td>
+	</tr>
+	<tr class="bt ct">
+		<td>Contact Number</td>
+		<td>Release Date</td>
+	</tr>
+</table>
+<br />
+<table>
+	<tr>
+		<td>1. I hereby authorize DFAMPCI to claim my passport on my behalf.</td>
+	</tr>
+	<tr>
+		<td>
+			2. I hereby authorize DFAMPCI to contract the service of 
+			<?php echo $t['courier'] ?> to deliver my passport to the above address.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			3. That DFAMPCI, as a consolidator, shall be free of any criminal, 
+			civil, or administrative liability in cases of delays or failure of 
+			the courier or service provider to deliver the passport/documents 
+			assigned to them for delivery to the applicants
+		</td>
+	</tr>
+</table>
+<br /><br />
+<table style="margin-left: auto; margin-right: 10px; width: 400px">
+	<tr class="ct">
+		<td><?php echo $t['lastName'] ?>, <?php echo $t['firstName'] ?> <?php echo $t['middleName'] ?></td>
+	</tr>
+	<tr class="bt ct">
+		<td>Signature over Printed Name</td>
+	</tr>
+</table>
+</body>
+</html>
